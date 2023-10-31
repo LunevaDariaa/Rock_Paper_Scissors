@@ -10,17 +10,24 @@
   <body>
     <header>ROCK - PAPER - SCISSORS</header>
 
+    <!-- Pop-up modal  -->
+    <div class="popup hide">
+      <p class="winner"></p>
+      <button type="button" class="btn_close">PLAY AGAIN</button>
+    </div>
+    
+    <!-- The main part -->
     <section class="window">
       <div class="screen">
         <div class="info_display"></br></div>
         <div class="scores">
           <div class="user">
-            <h3>User:</h3>
-            <div class="user_score"></div>
+            <h3>You:</h3>
+            <div class="user_score hide"></div>
           </div>
           <div class="computer">
             <h3>Computer:</h3>
-            <div class="comp_score"></div>
+            <div class="comp_score hide"></div>
           </div>
         </div>
         <div class="elements ">
@@ -35,5 +42,6 @@
       <button id="paper"><img src="photo/paper.png" /></br>PAPER</button>
       <button id="scissors"><img src="photo/scissors.png" /></br>SCISSORS</button>
     </section>
+    <div class="overlay hide"></div>
   </body>
 </html>
