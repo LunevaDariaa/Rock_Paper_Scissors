@@ -1,5 +1,5 @@
 "use strict";
-
+/*
 // create rock, scissor and paper
 const choise = ["rock", "paper", "scissors"];
 // take user's input- one of them
@@ -26,7 +26,6 @@ const compSelection = function (array) {
   return computerChoise;
 };
 
-//const playerChoise = playerSelection();
 // compare two inputs
 const playRound = function (playerChoise, computerChoise) {
   const lose = `You lose! ${computerChoise} beats ${playerChoise}!`;
@@ -86,3 +85,4 @@ const game = function () {
 };
 
 game();
+*/

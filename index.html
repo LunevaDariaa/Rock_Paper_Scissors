@@ -3,8 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="script.js"></script>
+    <title>Rock-Paper-Scissors</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header>ROCK - PAPER - SCISSORS</header>
+
+    <section class="window">
+      <div class="screen">
+        <div class="info_display"></br></div>
+        <div class="scores">
+          <div class="user">
+            <h3>User:</h3>
+            <div class="user_score"></div>
+          </div>
+          <div class="computer">
+            <h3>Computer:</h3>
+            <div class="comp_score"></div>
+          </div>
+        </div>
+        <div class="elements ">
+          <img class="img hide" src="photo/rock.png" />
+          <img class="img hide" src="photo/rock.png" />
+        </div>
+    </div>
+    </section>
+
+    <section class="buttons">
+      <button id="rock"><img src="photo/rock.png" /></br>ROCK</button>
+      <button id="paper"><img src="photo/paper.png" /></br>PAPER</button>
+      <button id="scissors"><img src="photo/scissors.png" /></br>SCISSORS</button>
+    </section>
+  </body>
 </html>

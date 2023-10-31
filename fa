@@ -1,0 +1,35 @@
+[33mcommit 90d3a7b8a2e0c77677b5d2a6b3b9bfd8235ae518[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: LunevaDariaa <daria.safri@gmail.com>
+Date:   Fri Oct 27 15:16:39 2023 -0400
+
+    Created new separated function to calculate computer random input.Dealt with error, that not displayed first input to the console
+
+[33mcommit 7e8d712ef706fd6469195fb1239a70653427a68f[m
+Author: LunevaDariaa <daria.safri@gmail.com>
+Date:   Thu Oct 26 23:25:30 2023 -0400
+
+    Created function,that create 5 rounds  and calculate who win the game
+
+[33mcommit a19a69aea6d662005a232e7eb5fd3d2f1e34c043[m
+Author: LunevaDariaa <daria.safri@gmail.com>
+Date:   Thu Oct 26 22:30:10 2023 -0400
+
+    Created functions with actual rules of a game: when wins user and when computer
+
+[33mcommit 9032a1a432eda1ec6e0f4d6e64c42eee4b53bd2e[m
+Author: LunevaDariaa <daria.safri@gmail.com>
+Date:   Thu Oct 26 21:37:23 2023 -0400
+
+    Created two functions-one takes input from user and other- makes choise for computer
+
+[33mcommit 63057e32813a865648f9d8920557aeb0fb1034ea[m
+Author: LunevaDariaa <daria.safri@gmail.com>
+Date:   Thu Oct 26 20:51:43 2023 -0400
+
+    Added README and all needed files
+
+[33mcommit 555997704fa7dcc02887b8b78508c9422f706fcd[m
+Author: Daria Luneva <daria.safri@gmail.com>
+Date:   Thu Oct 26 20:27:43 2023 -0400
+
+    Initial commit

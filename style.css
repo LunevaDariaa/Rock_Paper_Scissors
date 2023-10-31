@@ -1,0 +1,93 @@
+header {
+  background-color: rgb(35, 51, 54);
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  color: rgb(204, 111, 40);
+  font-style: oblique;
+  font-family: Apple Chancery, cursive;
+  filter: drop-shadow(0 20px 55px #b8b7e2);
+}
+
+button img {
+  width: 70px;
+  height: auto;
+}
+
+button {
+  border: 4px solid rgba(165, 98, 86, 0.753);
+  width: 200px;
+  background-color: rgb(243, 229, 223);
+  color: #4b403b;
+}
+button:hover {
+  background-color: rgb(216, 200, 192);
+}
+.window {
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  filter: drop-shadow(0 50px 55px #b8b7e2);
+}
+.window .screen {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  justify-content: center;
+  margin: 40px 100px;
+  background-color: rgb(243, 229, 223);
+  height: 300px;
+  width: 600px;
+  padding: 40px;
+  filter: drop-shadow(0 20px 25px #b8b7e2);
+}
+.info_display {
+  margin-bottom: 20px;
+  background-color: #f5efeb;
+  height: 60px;
+  width: 580px;
+  border: 2px solid rgba(165, 98, 86, 0.753);
+}
+
+.screen .scores {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  height: 100px;
+}
+
+body {
+  background-color: #dad3cf;
+}
+.screen .scores div {
+  display: flex;
+  flex-direction: row;
+}
+.user_score,
+.comp_score {
+  margin-left: 30px;
+  background-color: white;
+  width: 70px;
+  height: 70px;
+}
+.elements {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hide {
+  display: none;
+}
+
+.elements .img {
+  width: 100px;
+  height: 100px;
+}
