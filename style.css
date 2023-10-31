@@ -49,6 +49,10 @@ button:hover {
   filter: drop-shadow(0 20px 25px #b8b7e2);
 }
 .info_display {
+  display: flex;
+  font-size: 23px;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
   background-color: #f5efeb;
   height: 60px;
@@ -72,6 +76,11 @@ body {
 }
 .user_score,
 .comp_score {
+  display: flex;
+  font-size: 38px;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
   margin-left: 30px;
   background-color: white;
   width: 70px;
@@ -87,7 +96,8 @@ body {
   display: none;
 }
 
-.elements .img {
+.elements .img_user,
+.elements .img_comp {
   width: 100px;
   height: 100px;
 }

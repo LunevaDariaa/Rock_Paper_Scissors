@@ -1,4 +1,77 @@
 "use strict";
+const rock = document.querySelector("#rock");
+const paper = document.querySelector("#paper");
+const scissors = document.querySelector("#scissors");
+const btn = document.querySelectorAll("button");
+
+const imgUser = document.querySelector(".img_user");
+const imgComp = document.querySelector(".img_comp");
+
+const userScr = document.querySelector(".user_score");
+const compScr = document.querySelector(".comp_score");
+const infoDisplay = document.querySelector(".info_display");
+const choise = ["rock", "paper", "scissors"];
+
+let playerScore = 0;
+let computerScore = 0;
+// Compute computer input
+let computerChoise;
+const compSelection = function (array) {
+  computerChoise = choise[Math.floor(Math.random() * choise.length)]; // Get a random computer choice
+  imgComp.src = `photo/${computerChoise}.png`;
+  imgComp.classList.remove("hide");
+  return computerChoise;
+};
+
+btn.forEach((button) => {
+  button.addEventListener("click", function () {
+    if (button == rock) {
+      imgUser.classList.remove("hide");
+      imgUser.src = `photo/rock.png`;
+    } else if (button == paper) {
+      imgUser.classList.remove("hide");
+      imgUser.src = `photo/paper.png`;
+    } else if (button == scissors) {
+      imgUser.classList.remove("hide");
+      imgUser.src = `photo/scissors.png`;
+    }
+    console.log(compSelection(choise));
+    playRound(button.id, computerChoise);
+    userScr.textContent = playerScore;
+    compScr.textContent = computerScore;
+  });
+});
+
+const playRound = function (buttonId, computerChoise) {
+  const lose = `You lose! ${computerChoise} beats ${buttonId}!`;
+  const won = `You won! ${buttonId} beats ${computerChoise}!`;
+  //whet input right - game will start
+
+  if (buttonId === "paper" && computerChoise === "rock") {
+    playerScore++;
+    infoDisplay.textContent = won;
+  } else if (buttonId === "paper" && computerChoise === "scissors") {
+    computerScore++;
+    infoDisplay.textContent = won;
+  } else if (buttonId === "scissors" && computerChoise === "paper") {
+    playerScore++;
+    return won;
+  } else if (buttonId === "scissors" && computerChoise === "rock") {
+    computerScore++;
+    infoDisplay.textContent = won;
+  } else if (buttonId === "rock" && computerChoise === "scissors") {
+    playerScore++;
+    return won;
+  } else if (buttonId === "rock" && computerChoise === "paper") {
+    computerScore++;
+    infoDisplay.textContent = won;
+  } else if (buttonId === computerChoise) {
+    infoDisplay.textContent = `Try again! You both choose ${buttonId}`;
+  }
+};
+
+// console.log(playerScore);
+// console.log(computerScore);
 /*
 // create rock, scissor and paper
 const choise = ["rock", "paper", "scissors"];
